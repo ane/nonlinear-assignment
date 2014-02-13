@@ -1,11 +1,8 @@
-function terve()
-	println("hello")
-end
-
 function testi(x)
 	return (x-2)^2 - 4
 end
 
+# golden section search
 function lineSearch(f, L, a, b)
 	C = (sqrt(5) - 1)/2
 	a_h = a
@@ -13,9 +10,6 @@ function lineSearch(f, L, a, b)
 
 	x_h = b - C*(b-a)
 	y_h = a + C*(b-a)
-
-	f_x = f(x_h)
-	f_y = f(y_h)
 
 	while true
 		# step 2
